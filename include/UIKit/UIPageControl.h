@@ -38,6 +38,8 @@ UIKIT_EXPORT_CLASS
     NSInteger _numberOfPages;
 }
 
+- (CGSize) sizeForNumberOfPages:(NSInteger)pageCount STUB_METHOD;
+
 @property (nonatomic) NSInteger currentPage;
 @property (nonatomic) NSInteger numberOfPages;
 

@@ -133,6 +133,8 @@ UIKIT_EXPORT_CLASS
 @property UIAccessibilityNavigationStyle accessibilityNavigationStyle;
 @property UIAccessibilityTraits accessibilityTraits;
 
+@property(nonatomic) UIEdgeInsets additionalSafeAreaInsets STUB_PROPERTY;
+
 + (UIViewController*)controllerForView:(UIView*)view;
 + (void)attemptRotationToDeviceOrientation STUB_METHOD;
 - (BOOL)automaticallyForwardAppearanceAndRotationMethodsToChildViewControllers STUB_METHOD;

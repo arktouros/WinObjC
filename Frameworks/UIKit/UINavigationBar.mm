@@ -264,18 +264,20 @@ static void setBackground(UINavigationBar* self) {
  @Status Caveat
  @Notes animation parameter not supported
 */
-- (void)popNavigationItemAnimated:(BOOL)animated {
+- (UINavigationItem *)popNavigationItemAnimated:(BOOL)animated {
     id item = [_items lastObject];
     if (item == nil) {
         TraceVerbose(TAG, L"No navigation item to pop!");
         return;
     }
 
+	UINavigationItem* lastNavigationItem = [_items lastObject];
     [_items removeLastObject];
 
     [self setNeedsDisplay];
     [self setNeedsLayout];
     _newItem = [_items lastObject];
+    return lastNavigationItem;
 }
 
 /**

@@ -51,4 +51,6 @@ LOCALAUTHENTICATION_EXPORT_CLASS
 @interface LAContext : NSObject
 - (BOOL)canEvaluatePolicy:(LAPolicy)policy error:(NSError* _Nullable*)error STUB_METHOD;
 - (void)evaluatePolicy:(LAPolicy)policy localizedReason:(NSString*)localizedReason reply:(void (^)(BOOL, NSError*))reply STUB_METHOD;
+
+@property (nonatomic) NSTimeInterval touchIDAuthenticationAllowableReuseDuration STUB_PROPERTY;
 @end

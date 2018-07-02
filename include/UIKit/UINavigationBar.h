@@ -42,7 +42,7 @@ UIKIT_EXPORT_CLASS
 
 - (void)setItems:(NSArray*)items animated:(BOOL)animated;
 - (void)pushNavigationItem:(UINavigationItem*)item animated:(BOOL)animated;
-- (void)popNavigationItemAnimated:(BOOL)animated;
+- (UINavigationItem *)popNavigationItemAnimated:(BOOL)animated;
 - (void)setBackgroundImage:(UIImage*)backgroundImage forBarMetrics:(UIBarMetrics)barMetrics;
 - (void)setBackgroundImage:(UIImage*)backgroundImage forBarPosition:(NSInteger)position barMetrics:(UIBarMetrics)barMetrics;
 - (void)setTitleVerticalPositionAdjustment:(CGFloat)adjustment forBarMetrics:(UIBarMetrics)barMetrics STUB_METHOD;

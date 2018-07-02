@@ -306,6 +306,7 @@ UIKIT_EXPORT_CLASS
 - (void)willMoveToSuperview:(UIView*)newSuperview;
 - (void)willMoveToWindow:(UIWindow*)newWindow;
 - (void)willRemoveSubview:(UIView*)subview;
+- (void)safeAreaInsetsDidChange STUB_METHOD;
 
 // the block-based transition methods are not currently implemented
 @property (copy, nonatomic) NSArray* motionEffects;
@@ -360,6 +361,9 @@ UIKIT_EXPORT_CLASS
 @property (readonly, strong) UILayoutGuide* layoutMarginsGuide STUB_PROPERTY;
 @property (readonly, strong) UIView* viewForFirstBaselineLayout STUB_PROPERTY;
 @property (readonly, strong) UIView* viewForLastBaselineLayout STUB_PROPERTY;
+@property (nonatomic, readonly) UIEdgeInsets safeAreaInsets;
+@property (nonatomic, readonly, strong) UILayoutGuide *safeAreaLayoutGuide STUB_PROPERTY;
+@property (nonatomic) BOOL insetsLayoutMarginsFromSafeArea STUB_PROPERTY;
 
 // UIAccessibility properties.
 @property BOOL isAccessibilityElement;

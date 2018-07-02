@@ -145,6 +145,10 @@ FOUNDATION_EXPORT_CLASS
 @interface NSURLSessionUploadTask : NSURLSessionDataTask <NSCopying>
 @end
 
+FOUNDATION_EXPORT_CLASS
+@interface NSURLSessionStreamTask : NSURLSessionTask
+@end
+
 /* Session Delegates */
 @protocol NSURLSessionDelegate <NSObject>
 @optional

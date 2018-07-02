@@ -3855,4 +3855,18 @@ static void adjustSubviews(UIView* self, CGSize parentSize, CGSize delta) {
     UNIMPLEMENTED();
 }
 
+/**
+ @Status Stub
+*/
+- (UIEdgeInsets)safeAreaInsets {
+    return UIEdgeInsetsZero;
+}
+
+/**
+ @Status Stub
+*/
+- (void)safeAreaInsetsDidChange {
+    UNIMPLEMENTED();
+}
+
 @end
